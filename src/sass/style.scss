@@ -1,0 +1,43 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'blocks/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+// body {
+//     background-color: rgb(147, 213, 233);
+// }
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $mc;
+    margin: 25px auto 0 auto;
+}
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+// @import 'blocks/abmy';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/attainments';
+@import 'blocks/portfolio';
+// @import 'blocks/prise';
+@import 'blocks/cost';
+@import 'blocks/contacts';
+@import 'blocks/policy';
+
+
+
+@import 'blocks/media';
+
+
+

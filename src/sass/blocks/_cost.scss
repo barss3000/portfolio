@@ -1,0 +1,39 @@
+.cost {
+    margin-top: 60px;
+    &__wrap {
+        margin-top: 60px;
+        padding: 0 60px;
+        display: grid;
+        grid-template-columns: repeat(2,  minmax(370px, auto));
+        grid-template-rows: repeat(3, minmax(45px, auto));
+        grid-auto-rows: minmax(45px, auto);
+        row-gap: 15px;
+        justify-content: space-between;
+    }
+    &__item {
+        padding-left: 25px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, minmax(21px, auto));
+        row-gap: 5px;
+        justify-content:space-between;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: $mc;
+            border-radius: 100%;
+            top: 3px;
+        }
+        &-cost {
+            justify-self: end;
+            // text-align: end;
+        }
+        &-subtitle {
+            grid-column: 1 / 3;
+
+        }
+    }
+}

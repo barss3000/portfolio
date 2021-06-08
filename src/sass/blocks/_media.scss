@@ -1,0 +1,244 @@
+
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        padding-top: 100px;
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            column-gap: 20px;
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap:15px;
+            }
+        }
+    }
+    .resume {
+        margin-top: 100px;
+        &__wrapper {
+            padding: 50px 65px 0 65px;
+            grid-template-columns: repeat(2,360px);
+            column-gap: 110px;
+        }
+    }
+    .attainments {
+        &__wrapper {
+            padding-top: 10px;
+            grid-template-columns: repeat(3,270px);
+            grid-template-rows: repeat(3,minmax(270px,auto));
+            justify-content: center;
+        }
+        &__scales {
+            margin-top: 60px;
+            grid-template-columns: repeat(2,400px);
+            grid-template-rows: repeat(3,minmax(70px,auto));
+            grid-auto-rows: minmax(70px,auto);
+            grid-gap: 30px 45px;
+            justify-content: center;
+            &-line {
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 28px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+            column-gap: 30px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+            &-item {
+                column-gap:20px;
+                grid-template-columns: 40px 320px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 40px 40px 0 40px;
+            grid-template-columns: repeat(2,300px);
+            column-gap: 50px;
+        }
+    }
+    .attainments {
+        &__wrapper {
+            grid-template-columns: repeat(2,270px);
+            grid-template-rows: repeat(4,minmax(270px,auto));
+            grid-gap: 13px 30px;
+        }
+        &__scales {
+            grid-template-columns: repeat(2,350px);
+            column-gap: 30px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48_white {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        //     .first-item {
+        //         order: -1;
+        //     }
+        }
+        &__photo {
+            grid-row: unset;
+            // img {
+            //     object-fit: contain;         // работа с картинкой
+            // }
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+            column-gap: 15px;
+            &-item {
+                grid-template-columns: 40px 200px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        margin-top: 45px;
+        &__wrapper {
+            grid-template-columns: 370px;
+            justify-content: center;
+        }
+        &__column {
+            padding-bottom: 40px;
+        }
+    }
+    .attainments {
+        margin-top: 40px;
+        &__wrapper {
+            padding-top: 0;
+            grid-template-columns: repeat(2,250px);
+            grid-template-rows: repeat(4,minmax(250px,auto));
+            grid-gap: 10px 10px;
+        }
+        &__scales {
+            margin-top: 20px;
+            grid-template-columns: 350px;
+        }
+    }
+
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48_white {
+            font-size: 26px;
+        }
+        &_fz36 {
+            font-size:21px;
+        }
+    }
+    .burger {
+        right: 20px;
+    }
+    .divider {
+        margin: 0 auto;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url('../img/block_1/mayn_bg_1.jpg') no-repeat 60%/cover;
+        &__btns {
+            margin-top: 32px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        // &__photo {
+        //     grid-row: unset;
+        //     img {
+        //         object-fit: cover;         // работа с картинкой
+        //     }
+        // }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+    .resume {
+        .title {
+            &__section {
+                &-subtitle {
+                    font-size: 24px;
+                }
+            }
+        }
+        &__wrapper {
+            padding-top: 40px;
+            grid-template-columns: 285px;
+        }
+    }
+    .attainments {
+        margin-top: 0;
+        .divider {
+            margin: 10px auto;
+        }
+        .title {
+            &__section {
+                &-subtitle {
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+        }
+        &__wrapper {
+            margin-top: 20px;
+            grid-template-columns: 270px;
+            grid-auto-rows: 270px;
+            row-gap: 20px;
+        }
+        &__scales {
+            grid-template-columns: 290px;
+            row-gap: 20px;
+        }
+    }
+}
+
+

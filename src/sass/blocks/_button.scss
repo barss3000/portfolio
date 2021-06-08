@@ -1,0 +1,12 @@
+.btn {
+    height: 45px;
+    background: $mc;
+    padding: 12px 25px 12px 25px;
+    box-shadow: 1px 4px 4px rgb(8, 161, 29);
+    
+    &:hover {
+        background: #fff;
+        box-shadow: 3px 3px 20px $mc;
+        border: none;
+    }
+}

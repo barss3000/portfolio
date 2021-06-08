@@ -1,0 +1,37 @@
+.prise {
+    margin-top: 60px;
+    &__wrap {
+        margin: 60px 56px 0 45px;
+        display: grid;
+        grid-template-columns: repeat(2,  370px);
+        grid-template-rows: repeat(3, 45px);
+        grid-auto-rows: 45px;
+        row-gap: 15px;
+        justify-content:space-between;
+    }
+    &__item {
+        padding-left: 25px;
+    }
+    &__header {
+        display: grid;
+        grid-template-columns: 190px minmax(60px, auto);
+        grid-template-rows: 25px;
+        justify-content:space-between;
+        // align-content: space-between;
+        &-title {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: $mc;
+                border-radius: 100%;
+                left: -25px;
+                top: 3px;
+            }
+        }
+    }
+
+
+}

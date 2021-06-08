@@ -1,0 +1,117 @@
+.contacts {
+    margin: 120px 0 90px 0;
+    &__wrap {
+        padding: 0 35px 0 52px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__photo {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__title {
+        position: relative;
+        padding: 2px 0 0 12px;
+        @include before_circle;
+    }
+    &__text, &__social{
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        cursor: pointer;
+        svg path {
+            &:hover {
+                fill: $mc;
+            }
+        }
+        // img {
+        //     max-width: 30px;
+        //     max-height: 30px;
+        // }
+
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 45px  175px 45px;
+        grid-template-columns: repeat(2, 280px);
+        grid-gap: 30px 25px;
+        // justify-content: space-between;
+        label {
+            display: block;
+            position: absolute;
+            border: 1px solid $mc;
+            color: $mc;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+            top: -8px;
+            left: 12px;
+        }
+    }
+    &__triggers {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 14px;
+        // text-align: end;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            padding: 0 20px;
+            width: 100%;
+            height: 100%;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            padding: 10px 20px;
+            font-size: 12px;
+            font-weight: 500;
+            width: 100%;
+            height: 100%;
+            resize: none;
+        }
+
+    }
+    &__btn {
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        font-size: 16px;
+        line-height: 18px;
+        &:hover {
+            color: $mc;
+            text-decoration: none;
+        }
+    }
+}
