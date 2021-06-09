@@ -85,9 +85,9 @@
                     <li class="menu__link"><a href="#about">ПРО МЕНЯ</a></li>
                     <li class="menu__link"><a href="#resume">МОЙ ОПЫТ</a></li>
                     <li class="menu__link"><a href="#attainments">МОИ НАВЫКИ</a></li>
-                    <li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-                    <li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-                    <li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+                    <li class="menu__link"><a href="#portfolio">МОИ РАБОТЫ</a></li>
+                    <li class="menu__link"><a href="#cost">ПРАЙС-ЛИСТ</a></li>
+                    <li class="menu__link"><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__icons">
@@ -124,7 +124,7 @@
             <h1 class="title title_fz48_white promo__title">Я web-разработчик<br>
                 из города Хабаровск</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
+                <a href="#portfolio" class="promo__link btn">Портфолио</a>
                 <a href="#about" class="promo__link">Про меня</a>
             </div>
         </div>
@@ -179,7 +179,16 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/block_2/foto_1.jpg" alt="photo">
+                    <!-- <img srcset="img/block_2/photo_min.png 300w,
+                                img/block_2/photo.png 400w"
+                        sizes="(max-width: 576px) 280px,
+                                (min-width: 577px) 400px"
+                    src="img/block_2/photo.png" alt="photo"> -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/block_2/photo_min.png">
+                        <source media="(min-width: 577px)" srcset="img/block_2/photo.png">
+                        <img src="img/block_2/foto_1.jpg" alt="photo">
+                    </picture>
                 </div>
                 <div class="about__descr first-item">
                     <h2 class="title title_fz16 about__title">Про меня</h2>
@@ -425,16 +434,16 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Портфолио</h2>
             <div class="title title_fz36 title__section-subtitle">Мои работы</div>
             <div class="divider"></div>
             <div class="portfolio__wrap">
-                <a href="http://barss3000.github.io/uber/" class="portfolio__item">
+                <a href="http://barss3000.github.io/Uber_project/" class="portfolio__item">
                     <img src="img/block_5/uber.jpg" alt="uber">
                 </a>
-                <a href="http://barss3000.github.io/puls_1/" class="portfolio__item">
+                <a href="http://barss3000.github.io/pulsemeter_1/" class="portfolio__item">
                     <img src="img/block_5/pulse.jpg" alt="pulse">
                 </a>
                 <a href="#" class="portfolio__item">
@@ -451,7 +460,7 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- HOME WORKE -->
     <!--
@@ -506,7 +515,7 @@
         </div>
     </section> -->
 
-    <!-- <section class="cost">
+    <section class="cost" id="cost">
         <div class="container">
             <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
             <div class="divider"></div>
@@ -543,9 +552,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrap">
                 <div class="contacts__photo">
@@ -606,7 +615,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <script src="js/script.js"></script>
 
