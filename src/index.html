@@ -73,7 +73,7 @@
         <div class="sidepanel__text title title_fz16_white"><span>Социальные сети</span></div>
     </aside>
 
-    <div class="menu">
+    <div id="up" class="menu">
         <div class="menu__block">
             <div class="menu__close">
                 <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -591,7 +591,7 @@
                         Или оставьте ваши данные и я сама вам напишу:
                     </div>
 
-                    <form action="#" class="contacts__form">
+                    <form class="contacts__form" acton="#">
                         <div class="contacts__input">
                             <input required name="name "id="name" type="text">
                             <label for="name">Ваше имя</label>
@@ -616,6 +616,18 @@
             </div>
         </div>
     </section>
+
+    <section class="overlay">
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="title title_fz16 modal__subtitle">Спасибо за вашу сообщение!</div>
+            <div class="title title_fz16 modal__descr">Свяжусь с вами в ближайшее время!</div>
+        </div>
+    </section>
+
+    <a class="pageup" href="#up">
+        <img src="icon/chevron-circle-up-solid.svg" alt="up">
+    </a>
 
     <script src="js/script.js"></script>
 

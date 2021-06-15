@@ -11,14 +11,14 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;            // Enable verbose debug output
 
 $mail->isSMTP();                    // настрим mailer для использования SMTP
-$mail->Host = 'smtp.gmail.com';     // установить SMTP сервер почтового ресурса с к-рым будем работать
+$mail->Host = 'smtp.rambler.ru';     // установить SMTP сервер почтового ресурса с к-рым будем работать
 $mail->SMTPAuth = true;             // включить SMTP аутентификация
-$mail->Username = '45iss5825@gmail.com';               // Наш логин
-$mail->Password = 'G%5""6xB3m3FYT%';               // Наш пароль от ящика
+$mail->Username = 'barss3000.denis@rambler.ru';               // Наш логин
+$mail->Password = '4ge4xQRbbU94am';               // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';          // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                  // TCP port to connect to
 
-$mail->setFrom('45iss5825@gmail.com', 'Portfolio');                // От кого письмо
+$mail->setFrom('barss3000.denis@rambler.ru', 'Portfolio');                // От кого письмо
 $mail->addAddress('testpost@barss3000.ru');             // Add a recipient
 //$mail->addAddress('ellen@example.com');                 // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
